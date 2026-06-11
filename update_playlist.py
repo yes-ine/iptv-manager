@@ -1,11 +1,12 @@
 import urllib.request
 import os
 import json
+import re
 
-# 1. ضع الـ GIST ID الخاص بك هنا (بين علامتي التنصيص)
+# 1. الـ GIST ID الخاص بك
 gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
-# 2. ضع روابط السيرفرات الستة الخاصة بك هنا
+# 2. روابط السيرفرات الستة
 SERVERS = [
     "http://maven@uq3uya.2m2h.im:80/get.php?username=Neserrn202334&password=hGTXB2CzTg4Y&type=m3u_plus",
     "http://core.itsall.pro:80/get.php?username=Allgoodlotfi&password=hhDZSxCpeD&type=m3u&output=mpegts",
@@ -15,9 +16,30 @@ SERVERS = [
     "http://1.fu4-pro.cfd:8080/get.php?username=eageapfsat795&password=0d8ie0jv8o&type=m3u_plus"
 ]
 
-latest_links = {}
+latest_channels = {}
 
-# جلب الروابط المحدثة من السيرفرات
+def get_channel_id(extinf_line):
+    # استخراج الاسم من نهاية السطر
+    name = extinf_line.split(',')[-1].strip()
+    
+    # القاعدة 1: قنوات TOD والشبيهة (حذف أي شيء بعد علامة |)
+    if '|' in name:
+        name = name.split('|')[0]
+        
+    # القاعدة 2: حذف أي نصوص داخل أقواس (غالباً تحتوي على تواريخ مثل (2026-06-06))
+    name = re.sub(r'\(.*?\)', '', name)
+    name = re.sub(r'\[.*?\]', '', name)
+    
+    # القاعدة 3: حذف التواريخ المكشوفة بصيغة YYYY-MM-DD أو DD-MM-YYYY
+    name = re.sub(r'\d{4}-\d{2}-\d{2}.*', '', name)
+    name = re.sub(r'\d{2}-\d{2}-\d{4}.*', '', name)
+    
+    # القاعدة 4: حذف الأوقات بصيغة HH:MM:SS
+    name = re.sub(r'\d{2}:\d{2}:\d{2}.*', '', name)
+
+    return name.strip()
+
+# جلب الروابط والأسماء المحدثة من السيرفرات
 for url in SERVERS:
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -26,13 +48,19 @@ for url in SERVERS:
         
         for i in range(len(content)):
             if content[i].startswith('#EXTINF'):
-                channel_name = content[i].split(',')[-1].strip()
+                extinf = content[i].strip()
                 channel_url = content[i+1].strip()
-                latest_links[channel_name] = channel_url
+                
+                uid = get_channel_id(extinf)
+                if uid:
+                    latest_channels[uid] = {
+                        'extinf': extinf,
+                        'url': channel_url
+                    }
     except:
         continue
 
-# تحديث ملف القنوات الخاص بك
+# تحديث ملف القنوات (الاسم والرابط معاً)
 try:
     with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as file:
         lines = file.readlines()
@@ -42,12 +70,15 @@ try:
         while i < len(lines):
             line = lines[i]
             if line.startswith('#EXTINF'):
-                file.write(line)
-                channel_name = line.split(',')[-1].strip()
+                uid = get_channel_id(line)
                 old_url = lines[i+1].strip()
                 
-                new_url = latest_links.get(channel_name, old_url)
-                file.write(f"{new_url}\n")
+                if uid in latest_channels:
+                    file.write(latest_channels[uid]['extinf'] + "\n")
+                    file.write(latest_channels[uid]['url'] + "\n")
+                else:
+                    file.write(line)
+                    file.write(old_url + "\n")
                 i += 2
             else:
                 if line.strip() and not line.startswith('http'):
