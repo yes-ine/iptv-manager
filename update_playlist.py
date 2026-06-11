@@ -1,6 +1,11 @@
 import urllib.request
+import os
+import json
 
-# ضع روابط السيرفرات الستة الخاصة بك بين علامات التنصيص
+# 1. ضع الـ GIST ID الخاص بك هنا (بين علامتي التنصيص)
+gist_id = "e39d470ae0b80c4bde495ec54476a927"
+
+# 2. ضع روابط السيرفرات الستة الخاصة بك هنا
 SERVERS = [
     "http://maven@uq3uya.2m2h.im:80/get.php?username=Neserrn202334&password=hGTXB2CzTg4Y&type=m3u_plus",
     "http://core.itsall.pro:80/get.php?username=Allgoodlotfi&password=hhDZSxCpeD&type=m3u&output=mpegts",
@@ -27,46 +32,44 @@ for url in SERVERS:
     except:
         continue
 
-# تحديث ملفك الخاص
-with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as file:
-    lines = file.readlines()
+# تحديث ملف القنوات الخاص بك
+try:
+    with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as file:
+        lines = file.readlines()
 
-with open('tv_channels_max_servers.m3u', 'w', encoding='utf-8') as file:
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        if line.startswith('#EXTINF'):
-            file.write(line)
-            channel_name = line.split(',')[-1].strip()
-            old_url = lines[i+1].strip()
-            
-            # وضع الرابط الجديد إذا توفر، أو إبقاء القديم
-            new_url = latest_links.get(channel_name, old_url)
-            file.write(f"{new_url}\n")
-            i += 2
-        else:
-            if line.strip() and not line.startswith('http'):
+    with open('tv_channels_max_servers.m3u', 'w', encoding='utf-8') as file:
+        i = 0
+        while i < len(lines):
+            line = lines[i]
+            if line.startswith('#EXTINF'):
                 file.write(line)
-            i += 1
-import os
-import json
+                channel_name = line.split(',')[-1].strip()
+                old_url = lines[i+1].strip()
+                
+                new_url = latest_links.get(channel_name, old_url)
+                file.write(f"{new_url}\n")
+                i += 2
+            else:
+                if line.strip() and not line.startswith('http'):
+                    file.write(line)
+                i += 1
+except Exception as e:
+    pass
 
-# --- تحديث الرابط السري للتلفاز ---
-gist_id = "e39d470ae0b80c4bde495ec54476a927"
+# إرسال التحديث إلى الرابط السري (Gist)
 token = os.environ.get("GIST_TOKEN")
-
-if token:
-    with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as f:
-        updated_content = f.read()
-    
-    url = f"https://api.github.com/gists/{gist_id}"
-    headers = {
-        "Authorization": f"token {token}",
-        "Accept": "application/vnd.github.v3+json",
-    }
-    data = {"files": {"playlist.m3u": {"content": updated_content}}}
-    req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
+if token and gist_id != "ضع_الـID_هنا":
     try:
+        with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as f:
+            updated_content = f.read()
+        
+        url = f"https://api.github.com/gists/{gist_id}"
+        headers = {
+            "Authorization": f"token {token}",
+            "Accept": "application/vnd.github.v3+json",
+        }
+        data = {"files": {"playlist.m3u": {"content": updated_content}}}
+        req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
         urllib.request.urlopen(req)
     except Exception as e:
         pass
