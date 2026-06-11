@@ -19,32 +19,31 @@ SERVERS = [
 latest_channels = {}
 
 def get_channel_id(extinf_line):
-    # استخراج الاسم من نهاية السطر
-    name = extinf_line.split(',')[-1].strip()
-    
-    # القاعدة 1: قنوات TOD والشبيهة (حذف أي شيء بعد علامة |)
-    if '|' in name:
-        name = name.split('|')[0]
+    # 1. تخصيص قنوات TOD EV لأنها تتغير بالكامل (نستخرج فقط المعرف مثل TOD EV 019)
+    tod_match = re.search(r'TOD EV \d+', extinf_line, re.IGNORECASE)
+    if tod_match:
+        return tod_match.group(0).upper().strip()
         
-    # القاعدة 2: حذف أي نصوص داخل أقواس (غالباً تحتوي على تواريخ مثل (2026-06-06))
-    name = re.sub(r'\(.*?\)', '', name)
-    name = re.sub(r'\[.*?\]', '', name)
-    
-    # القاعدة 3: حذف التواريخ المكشوفة بصيغة YYYY-MM-DD أو DD-MM-YYYY
-    name = re.sub(r'\d{4}-\d{2}-\d{2}.*', '', name)
-    name = re.sub(r'\d{2}-\d{2}-\d{4}.*', '', name)
-    
-    # القاعدة 4: حذف الأوقات بصيغة HH:MM:SS
-    name = re.sub(r'\d{2}:\d{2}:\d{2}.*', '', name)
-
+    # 2. القنوات الأخرى: جلب الاسم من tvg-name أو من بعد الفاصلة الأخيرة
+    tvg_match = re.search(r'tvg-name="([^"]+)"', extinf_line)
+    if tvg_match:
+        name = tvg_match.group(1).strip()
+    else:
+        name = extinf_line.split(',')[-1].strip()
+        
+    # تنظيف التواريخ والأوقات لتبقى هوية القنوات ثابتة للمطابقة
+    name = re.sub(r'\s*\(?\[?\d{1,2}[-/]\d{1,2}[-/]?\d*.*', '', name)
+    name = re.sub(r'\s*\(?\[?\d{2}:\d{2}.*', '', name)
     return name.strip()
 
-# جلب الروابط والأسماء المحدثة من السيرفرات
+# جلب البيانات من السيرفرات
+print("بدء جلب القنوات من السيرفرات...")
 for url in SERVERS:
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         response = urllib.request.urlopen(req)
         content = response.read().decode('utf-8').splitlines()
+        print(f"تم جلب {len(content)} سطر بنجاح من السيرفر: {url[:35]}...")
         
         for i in range(len(content)):
             if content[i].startswith('#EXTINF'):
@@ -57,10 +56,14 @@ for url in SERVERS:
                         'extinf': extinf,
                         'url': channel_url
                     }
-    except:
+    except Exception as e:
+        print(f"خطأ أثناء الجلب من السيرفر {url[:35]}: {e}")
         continue
 
-# تحديث ملف القنوات (الاسم والرابط معاً)
+print(f"إجمالي القنوات الفريدة المكتشفة من السيرفرات: {len(latest_channels)}")
+
+# تحديث الملف المحلي
+updated_count = 0
 try:
     with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as file:
         lines = file.readlines()
@@ -76,6 +79,7 @@ try:
                 if uid in latest_channels:
                     file.write(latest_channels[uid]['extinf'] + "\n")
                     file.write(latest_channels[uid]['url'] + "\n")
+                    updated_count += 1
                 else:
                     file.write(line)
                     file.write(old_url + "\n")
@@ -84,10 +88,11 @@ try:
                 if line.strip() and not line.startswith('http'):
                     file.write(line)
                 i += 1
+    print(f"تم تحديث أسماء وروابط {updated_count} قناة داخل الملف بنجاح.")
 except Exception as e:
-    pass
+    print(f"خطأ أثناء تحديث الملف المحلي: {e}")
 
-# إرسال التحديث إلى الرابط السري (Gist)
+# تحديث الـ Gist للاحتياط
 token = os.environ.get("GIST_TOKEN")
 if token and gist_id != "ضع_الـID_هنا":
     try:
@@ -102,5 +107,6 @@ if token and gist_id != "ضع_الـID_هنا":
         data = {"files": {"playlist.m3u": {"content": updated_content}}}
         req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
         urllib.request.urlopen(req)
+        print("تم تحديث الـ Gist بنجاح.")
     except Exception as e:
-        pass
+        print(f"فشل تحديث الـ Gist: {e}")
