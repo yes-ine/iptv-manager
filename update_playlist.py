@@ -48,3 +48,25 @@ with open('tv_channels_max_servers.m3u', 'w', encoding='utf-8') as file:
             if line.strip() and not line.startswith('http'):
                 file.write(line)
             i += 1
+import os
+import json
+
+# --- تحديث الرابط السري للتلفاز ---
+gist_id = "e39d470ae0b80c4bde495ec54476a927"
+token = os.environ.get("GIST_TOKEN")
+
+if token:
+    with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as f:
+        updated_content = f.read()
+    
+    url = f"https://api.github.com/gists/{gist_id}"
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+    data = {"files": {"playlist.m3u": {"content": updated_content}}}
+    req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
+    try:
+        urllib.request.urlopen(req)
+    except Exception as e:
+        pass
