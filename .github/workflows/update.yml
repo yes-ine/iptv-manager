@@ -5,9 +5,6 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   update-playlist:
     runs-on: ubuntu-latest
@@ -24,9 +21,3 @@ jobs:
         env:
           GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: python update_playlist.py
-
-      - name: Commit and Push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Auto-update links"
-          file_pattern: "tv_channels_max_servers.m3u"
