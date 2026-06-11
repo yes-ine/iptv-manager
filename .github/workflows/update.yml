@@ -2,7 +2,7 @@ name: Update IPTV Links
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # الكود سيعمل تلقائيا كل 6 ساعات
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,6 +18,8 @@ jobs:
           python-version: '3.x'
 
       - name: Run Update Script
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: python update_playlist.py
 
       - name: Commit and Push changes
