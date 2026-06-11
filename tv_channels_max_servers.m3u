@@ -23117,9 +23117,9 @@ http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/286328
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/253579
 #EXTINF:-1,Abu Dhabi ASIA 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/253580
-#EXTINF:0 CUID="14201" tvg-name="|SPO|  AD Sports 1 HEVC" group-title="[S2] AR | PREMIUM SPORTS",|SPO|  AD Sports 1 HEVC
+#EXTINF:-1,|SPO|  AD Sports 1 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/253581
-#EXTINF:0 CUID="14202" tvg-name="|SPO|  AD Sports 2 HEVC" group-title="[S2] AR | PREMIUM SPORTS",|SPO|  AD Sports 2 HEVC
+#EXTINF:-1,|SPO|  AD Sports 2 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/253582
 #EXTINF:-1,Al Kass 1 HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/253604
@@ -23467,11 +23467,11 @@ http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267807
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267808
 #EXTINF:-1,FR - L'ÉQUIPE LIVE 10 HD - (EVENT ONLY)
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267809
-#EXTINF:0 CUID="12769" tvg-name="|FR| EUROSPORT 360 6 HD" group-title="[S2] FRANCE SPORTS",|FR| EUROSPORT 360 6 HD
+#EXTINF:-1,|FR| EUROSPORT 360 6 HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/269876
-#EXTINF:0 CUID="12770" tvg-name="|FR| EUROSPORT 360 7 HD" group-title="[S2] FRANCE SPORTS",|FR| EUROSPORT 360 7 HD
+#EXTINF:-1,|FR| EUROSPORT 360 7 HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/269877
-#EXTINF:0 CUID="12771" tvg-name="|FR| EUROSPORT 360 8 HD" group-title="[S2] FRANCE SPORTS",|FR| EUROSPORT 360 8 HD
+#EXTINF:-1,|FR| EUROSPORT 360 8 HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/269878
 #EXTINF:-1,FR - CANAL+LIVE 1 HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/271188
@@ -24599,141 +24599,141 @@ http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267382
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267381
 #EXTINF:-1,UK SD : LA LIGA TV
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/267380
-#EXTINF:0 CUID="1077" tvg-name="|UK|HD| SKY SPORTS NEWS" tvg-id="skysportsnews.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS NEWS
+#EXTINF:-1,|UK|HD| SKY SPORTS NEWS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101019
-#EXTINF:0 CUID="1078" tvg-name="|UK|HD| SKY SPORTS FOOTBALL" tvg-id="skysportsfootball.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS FOOTBALL
+#EXTINF:-1,|UK|HD| SKY SPORTS FOOTBALL
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101021
-#EXTINF:0 CUID="1079" tvg-name="|UK|HD| SKY SPORTS MAIN EVENT" tvg-id="skysportsmainevent.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS MAIN EVENT
+#EXTINF:-1,|UK|HD| SKY SPORTS MAIN EVENT
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103113
-#EXTINF:0 CUID="1080" tvg-name="|UK|HD| SKY SPORTS PREMIER LEAGUE" tvg-id="skysportspremiereleague.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS PREMIER LEAGUE
+#EXTINF:-1,|UK|HD| SKY SPORTS PREMIER LEAGUE
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101022
-#EXTINF:0 CUID="1081" tvg-name="|UK|HD| SKY SPORTS ARENA" tvg-id="skysportsarena.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS ARENA
+#EXTINF:-1,|UK|HD| SKY SPORTS ARENA
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101024
-#EXTINF:0 CUID="1082" tvg-name="|UK|HD| SKY SPORTS CRICKET" tvg-id="skysportscricket.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS CRICKET
+#EXTINF:-1,|UK|HD| SKY SPORTS CRICKET
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101025
-#EXTINF:0 CUID="1083" tvg-name="|UK|HD| SKY SPORTS DARTS" tvg-id="skysportsf1.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS DARTS
+#EXTINF:-1,|UK|HD| SKY SPORTS DARTS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101026
-#EXTINF:0 CUID="1084" tvg-name="|UK|FHD| SKY SPORTS GOLF" tvg-id="skysportsgolf.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS GOLF
+#EXTINF:-1,|UK|FHD| SKY SPORTS GOLF
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101027
-#EXTINF:0 CUID="1085" tvg-name="|UK|HD| TNT SPORTS 1" tvg-id="btsport1.uk" group-title="[S2] UK SPORTS",|UK|HD| TNT SPORTS 1
+#EXTINF:-1,|UK|HD| TNT SPORTS 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103142
-#EXTINF:0 CUID="1086" tvg-name="|UK|HD| TNT SPORTS 2" tvg-id="btsport2.uk" group-title="[S2] UK SPORTS",|UK|HD| TNT SPORTS 2
+#EXTINF:-1,|UK|HD| TNT SPORTS 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103145
-#EXTINF:0 CUID="1087" tvg-name="|UK|HD| TNT SPORTS 3" tvg-id="btsport3.uk" group-title="[S2] UK SPORTS",|UK|HD| TNT SPORTS 3
+#EXTINF:-1,|UK|HD| TNT SPORTS 3
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103148
-#EXTINF:0 CUID="1088" tvg-name="|UK|HD| BOX NATION" tvg-id="boxnation.uk" group-title="[S2] UK SPORTS",|UK|HD| BOX NATION
+#EXTINF:-1,|UK|HD| BOX NATION
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101033
-#EXTINF:0 CUID="1089" tvg-name="|UK|FHD| SKY SPORTS NEWS" tvg-id="skysportsnews.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS NEWS
+#EXTINF:-1,|UK|FHD| SKY SPORTS NEWS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101042
-#EXTINF:0 CUID="1090" tvg-name="|UK|FHD| SKY SPORTS FOOTBALL" tvg-id="skysportsfootball.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS FOOTBALL
+#EXTINF:-1,|UK|FHD| SKY SPORTS FOOTBALL
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101044
-#EXTINF:0 CUID="1091" tvg-name="|UK|FHD| SKY SPORTS PREMIER LEAGUE" tvg-id="skysportspremiereleague.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS PREMIER LEAGUE
+#EXTINF:-1,|UK|FHD| SKY SPORTS PREMIER LEAGUE
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101045
-#EXTINF:0 CUID="1092" tvg-name="|UK|FHD| SKY SPORTS MAIN EVENT" tvg-id="skysportsmainevent.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS MAIN EVENT
+#EXTINF:-1,|UK|FHD| SKY SPORTS MAIN EVENT
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103112
-#EXTINF:0 CUID="1093" tvg-name="|UK|FHD| SKY SPORT MIX" tvg-id="skysportsmix.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORT MIX
+#EXTINF:-1,|UK|FHD| SKY SPORT MIX
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103109
-#EXTINF:0 CUID="1094" tvg-name="|UK|FHD| SKY SPORTS RACING" tvg-id="skysportsracing.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS RACING
+#EXTINF:-1,|UK|FHD| SKY SPORTS RACING
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101047
-#EXTINF:0 CUID="1095" tvg-name="|UK|FHD| SKY SPORTS ARENA" tvg-id="skysportsarena.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS ARENA
+#EXTINF:-1,|UK|FHD| SKY SPORTS ARENA
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101049
-#EXTINF:0 CUID="1096" tvg-name="|UK|FHD| SKY SPORTS CRICKET" tvg-id="skysportscricket.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS CRICKET
+#EXTINF:-1,|UK|FHD| SKY SPORTS CRICKET
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101050
-#EXTINF:0 CUID="1097" tvg-name="|UK|FHD| SKY SPORTS DARTS" tvg-id="skysportsf1.uk" group-title="[S2] UK SPORTS",|UK|FHD| SKY SPORTS DARTS
+#EXTINF:-1,|UK|FHD| SKY SPORTS DARTS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101051
-#EXTINF:0 CUID="1098" tvg-name="|UK|HD| SKY SPORTS GOLF" tvg-id="skysportsgolf.uk" group-title="[S2] UK SPORTS",|UK|HD| SKY SPORTS GOLF
+#EXTINF:-1,|UK|HD| SKY SPORTS GOLF
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101052
-#EXTINF:0 CUID="1099" tvg-name="|UK|FHD| TNT SPORTS 1" tvg-id="btsport1.uk" group-title="[S2] UK SPORTS",|UK|FHD| TNT SPORTS 1
+#EXTINF:-1,|UK|FHD| TNT SPORTS 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/205999
-#EXTINF:0 CUID="1100" tvg-name="|UK|FHD| TNT SPORTS 2" tvg-id="btsport2.uk" group-title="[S2] UK SPORTS",|UK|FHD| TNT SPORTS 2
+#EXTINF:-1,|UK|FHD| TNT SPORTS 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103146
-#EXTINF:0 CUID="1101" tvg-name="|UK|FHD| TNT SPORTS 3" tvg-id="btsport3.uk" group-title="[S2] UK SPORTS",|UK|FHD| TNT SPORTS 3
+#EXTINF:-1,|UK|FHD| TNT SPORTS 3
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103149
-#EXTINF:0 CUID="1102" tvg-name="|UK|FHD| TNT SPORTS 4" group-title="[S2] UK SPORTS",|UK|FHD| TNT SPORTS 4
+#EXTINF:-1,|UK|FHD| TNT SPORTS 4
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/250316
-#EXTINF:0 CUID="1103" tvg-name="|UK|FHD| TNT SPORTS 5" group-title="[S2] UK SPORTS",|UK|FHD| TNT SPORTS 5
+#EXTINF:-1,|UK|FHD| TNT SPORTS 5
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/250317
-#EXTINF:0 CUID="1104" tvg-name="|UK|FHD| LFC" tvg-id="liverpoolfctv.uk" group-title="[S2] UK SPORTS",|UK|FHD| LFC
+#EXTINF:-1,|UK|FHD| LFC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101063
-#EXTINF:0 CUID="1105" tvg-name="|UK|FHD| PREMIER SPORTS 1" tvg-id="premiersports.uk" group-title="[S2] UK SPORTS",|UK|FHD| PREMIER SPORTS 1
+#EXTINF:-1,|UK|FHD| PREMIER SPORTS 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101064
-#EXTINF:0 CUID="1106" tvg-name="|UK|FHD| PREMIER SPORTS 2" tvg-id="premiersports2.uk" group-title="[S2] UK SPORTS",|UK|FHD| PREMIER SPORTS 2
+#EXTINF:-1,|UK|FHD| PREMIER SPORTS 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101065
-#EXTINF:0 CUID="1107" tvg-name="|UK|FHD| RACING UK" tvg-id="racinguk.uk" group-title="[S2] UK SPORTS",|UK|FHD| RACING UK
+#EXTINF:-1,|UK|FHD| RACING UK
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101066
-#EXTINF:0 CUID="1108" tvg-name="|UK|FHD| MUTV" tvg-id="mutv.uk" group-title="[S2] UK SPORTS",|UK|FHD| MUTV
+#EXTINF:-1,|UK|FHD| MUTV
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101067
-#EXTINF:0 CUID="1109" tvg-name="|UK|SD| SKY SPORTS NEWS" tvg-id="skysportsnews.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS NEWS
+#EXTINF:-1,|UK|SD| SKY SPORTS NEWS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101069
-#EXTINF:0 CUID="1110" tvg-name="|UK|SD| SKY SPORTS NFL/ACTION" tvg-id="skysportsaction.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS NFL/ACTION
+#EXTINF:-1,|UK|SD| SKY SPORTS NFL/ACTION
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101070
-#EXTINF:0 CUID="1111" tvg-name="|UK|SD| SKY SPORTS FOOTBALL" tvg-id="skysportsfootball.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS FOOTBALL
+#EXTINF:-1,|UK|SD| SKY SPORTS FOOTBALL
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101071
-#EXTINF:0 CUID="1112" tvg-name="|UK|SD| SKY SPORTS MAIN EVENT" tvg-id="skysportsmainevent.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS MAIN EVENT
+#EXTINF:-1,|UK|SD| SKY SPORTS MAIN EVENT
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103114
-#EXTINF:0 CUID="1113" tvg-name="|UK|SD| SKY SPORTS PREMIER LEAGUE" tvg-id="skysportspremiereleague.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS PREMIER LEAGUE
+#EXTINF:-1,|UK|SD| SKY SPORTS PREMIER LEAGUE
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101072
-#EXTINF:0 CUID="1114" tvg-name="|UK|SD| SKY SPORTS RACING" tvg-id="skysportsracing.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS RACING
+#EXTINF:-1,|UK|SD| SKY SPORTS RACING
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101074
-#EXTINF:0 CUID="1115" tvg-name="|UK|SD| SKY SPORTS ARENA" tvg-id="skysportsarena.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS ARENA
+#EXTINF:-1,|UK|SD| SKY SPORTS ARENA
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101075
-#EXTINF:0 CUID="1116" tvg-name="|UK|SD| SKY SPORTS CRICKET" tvg-id="skysportscricket.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS CRICKET
+#EXTINF:-1,|UK|SD| SKY SPORTS CRICKET
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101076
-#EXTINF:0 CUID="1117" tvg-name="|UK|SD| SKY SPORTS DARTS" tvg-id="skysportsf1.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS DARTS
+#EXTINF:-1,|UK|SD| SKY SPORTS DARTS
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101077
-#EXTINF:0 CUID="1118" tvg-name="|UK|SD| SKY SPORT MIX" tvg-id="skysportsmix.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORT MIX
+#EXTINF:-1,|UK|SD| SKY SPORT MIX
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103111
-#EXTINF:0 CUID="1119" tvg-name="|UK|SD| SKY SPORTS GOLF" tvg-id="skysportsgolf.uk" group-title="[S2] UK SPORTS",|UK|SD| SKY SPORTS GOLF
+#EXTINF:-1,|UK|SD| SKY SPORTS GOLF
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101078
-#EXTINF:0 CUID="1120" tvg-name="|UK|SD| TNT SPORTS 1" tvg-id="btsport1.uk" group-title="[S2] UK SPORTS",|UK|SD| TNT SPORTS 1
+#EXTINF:-1,|UK|SD| TNT SPORTS 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103144
-#EXTINF:0 CUID="1121" tvg-name="|UK|SD| TNT SPORTS 2" tvg-id="btsport2.uk" group-title="[S2] UK SPORTS",|UK|SD| TNT SPORTS 2
+#EXTINF:-1,|UK|SD| TNT SPORTS 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103147
-#EXTINF:0 CUID="1122" tvg-name="|UK|SD| TNT SPORTS 3" tvg-id="btsport3.uk" group-title="[S2] UK SPORTS",|UK|SD| TNT SPORTS 3
+#EXTINF:-1,|UK|SD| TNT SPORTS 3
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/103150
-#EXTINF:0 CUID="1123" tvg-name="|UK|SD| TNT SPORTS 4" group-title="[S2] UK SPORTS",|UK|SD| TNT SPORTS 4
+#EXTINF:-1,|UK|SD| TNT SPORTS 4
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/250324
-#EXTINF:0 CUID="1124" tvg-name="|UK|HD| TNT SPORTS 5" group-title="[S2] UK SPORTS",|UK|HD| TNT SPORTS 5
+#EXTINF:-1,|UK|HD| TNT SPORTS 5
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/250318
-#EXTINF:0 CUID="1125" tvg-name="|UK|SD| BOX NATION" tvg-id="boxnation.uk" group-title="[S2] UK SPORTS",|UK|SD| BOX NATION
+#EXTINF:-1,|UK|SD| BOX NATION
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101091
-#EXTINF:0 CUID="1126" tvg-name="|UK|SD| LFC TV" tvg-id="liverpoolfctv.uk" group-title="[S2] UK SPORTS",|UK|SD| LFC TV
+#EXTINF:-1,|UK|SD| LFC TV
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101093
-#EXTINF:0 CUID="1127" tvg-name="|UK|SD| MUTV" tvg-id="mutv.uk" group-title="[S2] UK SPORTS",|UK|SD| MUTV
+#EXTINF:-1,|UK|SD| MUTV
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101094
-#EXTINF:0 CUID="1128" tvg-name="|UK|SD| RACING UK" tvg-id="racinguk.uk" group-title="[S2] UK SPORTS",|UK|SD| RACING UK
+#EXTINF:-1,|UK|SD| RACING UK
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/101097
-#EXTINF:0 CUID="1129" tvg-name="|UK| BBC RED BUTTON 1" group-title="[S2] UK SPORTS",|UK| BBC RED BUTTON 1
+#EXTINF:-1,|UK| BBC RED BUTTON 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/100863
-#EXTINF:0 CUID="1146" tvg-name="|UK|HD| Rangers FC TV" group-title="[S2] UK SPORTS",|UK|HD| Rangers FC TV
+#EXTINF:-1,|UK|HD| Rangers FC TV
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/243022
-#EXTINF:0 CUID="1157" tvg-name="|UK|HD| TNT SPORTS 4" group-title="[S2] UK SPORTS",|UK|HD| TNT SPORTS 4
+#EXTINF:-1,|UK|HD| TNT SPORTS 4
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/261533
-#EXTINF:0 CUID="1162" tvg-name="|UK| TNT Sport 1 HEVC" group-title="[S2] UK SPORTS",|UK| TNT Sport 1 HEVC
+#EXTINF:-1,|UK| TNT Sport 1 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265193
-#EXTINF:0 CUID="1163" tvg-name="|UK| TNT Sport 2 HEVC" group-title="[S2] UK SPORTS",|UK| TNT Sport 2 HEVC
+#EXTINF:-1,|UK| TNT Sport 2 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265194
-#EXTINF:0 CUID="1164" tvg-name="|UK| TNT Sport 3 HEVC" group-title="[S2] UK SPORTS",|UK| TNT Sport 3 HEVC
+#EXTINF:-1,|UK| TNT Sport 3 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265195
-#EXTINF:0 CUID="1165" tvg-name="|UK| TNT Sport 4 HEVC" group-title="[S2] UK SPORTS",|UK| TNT Sport 4 HEVC
+#EXTINF:-1,|UK| TNT Sport 4 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265196
-#EXTINF:0 CUID="1166" tvg-name="|UK| Sky Sport Arena HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Arena HEVC
+#EXTINF:-1,|UK| Sky Sport Arena HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265203
-#EXTINF:0 CUID="1167" tvg-name="|UK| Sky Sport Golf HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Golf HEVC
+#EXTINF:-1,|UK| Sky Sport Golf HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265204
-#EXTINF:0 CUID="1168" tvg-name="|UK| Sky Sport Football HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Football HEVC
+#EXTINF:-1,|UK| Sky Sport Football HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265205
-#EXTINF:0 CUID="1169" tvg-name="|UK| Sky Sport News HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport News HEVC
+#EXTINF:-1,|UK| Sky Sport News HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265206
-#EXTINF:0 CUID="1170" tvg-name="|UK| Sky Sport Mix HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Mix HEVC
+#EXTINF:-1,|UK| Sky Sport Mix HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265207
-#EXTINF:0 CUID="1171" tvg-name="|UK| Sky Sport F1 HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport F1 HEVC
+#EXTINF:-1,|UK| Sky Sport F1 HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265208
-#EXTINF:0 CUID="1172" tvg-name="|UK| Sky Sport Cricket HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Cricket HEVC
+#EXTINF:-1,|UK| Sky Sport Cricket HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265209
-#EXTINF:0 CUID="1173" tvg-name="|UK| Sky Sport Premier League HEVC" group-title="[S2] UK SPORTS",|UK| Sky Sport Premier League HEVC
+#EXTINF:-1,|UK| Sky Sport Premier League HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265210
-#EXTINF:0 CUID="1174" tvg-name="|UK| Sky SportRacing HEVC" group-title="[S2] UK SPORTS",|UK| Sky SportRacing HEVC
+#EXTINF:-1,|UK| Sky SportRacing HEVC
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/265211
 #EXTINF:-1,UKHD Sky Sports Mix HD
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/259353
@@ -25351,101 +25351,101 @@ http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/271392
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/271393
 #EXTINF:-1,BLUE SPORT 17 [EVENT ONLY]
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/271394
-#EXTINF:0 CUID="14230" tvg-name="|SCAN| V Xtra| V Xtra 1" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 1
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255073
-#EXTINF:0 CUID="14231" tvg-name="|SCAN| V Xtra| V Xtra 2" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 2
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 2
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255074
-#EXTINF:0 CUID="14232" tvg-name="|SCAN| V Xtra| V Xtra 3" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 3
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 3
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255075
-#EXTINF:0 CUID="14233" tvg-name="|SCAN| V Xtra| V Xtra 4" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 4
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 4
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255076
-#EXTINF:0 CUID="14234" tvg-name="|SCAN| V Xtra| V Xtra 5" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 5
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 5
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255077
-#EXTINF:0 CUID="14235" tvg-name="|SCAN| V Xtra| V Xtra 6" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 6
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 6
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255078
-#EXTINF:0 CUID="14236" tvg-name="|SCAN| V Xtra| V Xtra 7" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 7
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 7
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255079
-#EXTINF:0 CUID="14237" tvg-name="|SCAN| V Xtra| V Xtra 8" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 8
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 8
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255080
-#EXTINF:0 CUID="14238" tvg-name="|SCAN| V Xtra| V Xtra 9" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 9
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 9
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255081
-#EXTINF:0 CUID="14239" tvg-name="|SCAN| V Xtra| V Xtra 10" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 10
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 10
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255082
-#EXTINF:0 CUID="14240" tvg-name="|SCAN| V Xtra| V Xtra 11" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 11
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 11
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255083
-#EXTINF:0 CUID="14241" tvg-name="|SCAN| V Xtra| V Xtra 12" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 12
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 12
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255084
-#EXTINF:0 CUID="14242" tvg-name="|SCAN| V Xtra| V Xtra 13" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 13
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 13
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255085
-#EXTINF:0 CUID="14243" tvg-name="|SCAN| V Xtra| V Xtra 14" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 14
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 14
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255086
-#EXTINF:0 CUID="14244" tvg-name="|SCAN| V Xtra| V Xtra 15" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 15
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 15
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255087
-#EXTINF:0 CUID="14245" tvg-name="|SCAN| V Xtra| V Xtra 16" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 16
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 16
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255088
-#EXTINF:0 CUID="14246" tvg-name="|SCAN| V Xtra| V Xtra 17" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 17
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 17
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255089
-#EXTINF:0 CUID="14247" tvg-name="|SCAN| V Xtra| V Xtra 18" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 18
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 18
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255090
-#EXTINF:0 CUID="14248" tvg-name="|SCAN| V Xtra| V Xtra 19" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 19
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 19
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255091
-#EXTINF:0 CUID="14249" tvg-name="|SCAN| V Xtra| V Xtra 20" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 20
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 20
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255092
-#EXTINF:0 CUID="14250" tvg-name="|SCAN| V Xtra| V Xtra 21" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 21
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 21
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255093
-#EXTINF:0 CUID="14251" tvg-name="|SCAN| V Xtra| V Xtra 22" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 22
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 22
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255094
-#EXTINF:0 CUID="14252" tvg-name="|SCAN| V Xtra| V Xtra 23" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 23
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 23
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255095
-#EXTINF:0 CUID="14253" tvg-name="|SCAN| V Xtra| V Xtra 24" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 24
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 24
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255096
-#EXTINF:0 CUID="14254" tvg-name="|SCAN| V Xtra| V Xtra 25" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 25
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 25
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255097
-#EXTINF:0 CUID="14255" tvg-name="|SCAN| V Xtra| V Xtra 26" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 26
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 26
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255098
-#EXTINF:0 CUID="14256" tvg-name="|SCAN| V Xtra| V Xtra 27" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 27
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 27
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255099
-#EXTINF:0 CUID="14257" tvg-name="|SCAN| V Xtra| V Xtra 28" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 28
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 28
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255100
-#EXTINF:0 CUID="14258" tvg-name="|SCAN| V Xtra| V Xtra 29" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 29
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 29
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255101
-#EXTINF:0 CUID="14259" tvg-name="|SCAN| V Xtra| V Xtra 30" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 30
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 30
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255102
-#EXTINF:0 CUID="14260" tvg-name="|SCAN| V Xtra| V Xtra 31" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 31
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 31
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255103
-#EXTINF:0 CUID="14261" tvg-name="|SCAN| V Xtra| V Xtra 32" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 32
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 32
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255104
-#EXTINF:0 CUID="14262" tvg-name="|SCAN| V Xtra| V Xtra 33" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 33
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 33
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255105
-#EXTINF:0 CUID="14263" tvg-name="|SCAN| V Xtra| V Xtra 34" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 34
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 34
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255106
-#EXTINF:0 CUID="14264" tvg-name="|SCAN| V Xtra| V Xtra 35" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 35
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 35
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255107
-#EXTINF:0 CUID="14265" tvg-name="|SCAN| V Xtra| V Xtra 36" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 36
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 36
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255108
-#EXTINF:0 CUID="14266" tvg-name="|SCAN| V Xtra| V Xtra 37" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 37
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 37
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255109
-#EXTINF:0 CUID="14267" tvg-name="|SCAN| V Xtra| V Xtra 38" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 38
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 38
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255110
-#EXTINF:0 CUID="14268" tvg-name="|SCAN| V Xtra| V Xtra 39" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 39
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 39
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255111
-#EXTINF:0 CUID="14269" tvg-name="|SCAN| V Xtra| V Xtra 40" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 40
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 40
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255112
-#EXTINF:0 CUID="14270" tvg-name="|SCAN| V Xtra| V Xtra 41" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 41
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 41
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255113
-#EXTINF:0 CUID="14271" tvg-name="|SCAN| V Xtra| V Xtra 42" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 42
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 42
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255114
-#EXTINF:0 CUID="14272" tvg-name="|SCAN| V Xtra| V Xtra 43" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 43
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 43
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255115
-#EXTINF:0 CUID="14273" tvg-name="|SCAN| V Xtra| V Xtra 44" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 44
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 44
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255116
-#EXTINF:0 CUID="14274" tvg-name="|SCAN| V Xtra| V Xtra 45" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 45
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 45
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255117
-#EXTINF:0 CUID="14275" tvg-name="|SCAN| V Xtra| V Xtra 46" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 46
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 46
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255118
-#EXTINF:0 CUID="14276" tvg-name="|SCAN| V Xtra| V Xtra 47" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 47
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 47
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255119
-#EXTINF:0 CUID="14277" tvg-name="|SCAN| V Xtra| V Xtra 48" group-title="[S2] SCANDINAV VIAPLAY",|SCAN| V Xtra| V Xtra 48
+#EXTINF:-1,|SCAN| V Xtra| V Xtra 48
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/255120
 #EXTINF:-1,DSTV - TRACE URBAN
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/98403
@@ -25729,7 +25729,7 @@ http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/254578
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/254579
 #EXTINF:-1,DSTV - SuperSport Play
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/254580
-#EXTINF:0 CUID="2029" tvg-name="|DSTV| SuperSport Schools" group-title="[S2] AF DSTV",|DSTV| SuperSport Schools
+#EXTINF:-1,|DSTV| SuperSport Schools
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/258384
 #EXTINF:-1,DSTV |Azam Sports 1
 http://core.itsall.pro:80/Allgoodlotfi/hhDZSxCpeD/269729
@@ -26989,7 +26989,7 @@ https://desyra.co:443/live/dipak_25/429502/780.ts
 https://desyra.co:443/live/dipak_25/429502/781.ts
 #EXTINF:-1 tvg-id="supersportvariety4.za" tvg-name="DSTV : SUPERSPORTS VARIETY 4" group-title="[DESYRA] DSTV SUPERSPORT",DSTV : SUPERSPORTS VARIETY 4
 https://desyra.co:443/live/dipak_25/429502/784.ts
-#EXTINF:-1 tvg-id="4seven.uk" tvg-name="|CA| TSN 1 | HD" group-title="[DESYRA] TENNIS",|CA| TSN 1 | HD
+#EXTINF:-1 tvg-id="4seven.uk" tvg-name="|CA| TSN 1 | HD" tvg-logo="" group-title="SPORTS | TENNIS",|CA| TSN 1 | HD
 https://desyra.co:443/live/dipak_25/429502/1565.ts
 #EXTINF:-1 tvg-id="eurosport2.uk" tvg-name="EURO SPORTS 2 HD" tvg-logo="http://starapk1.com/logo/football.png" group-title="FOOTBALL",EURO SPORTS 2 HD
 https://desyra.co:443/live/dipak_25/429502/1920.ts
