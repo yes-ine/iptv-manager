@@ -1,0 +1,29 @@
+name: Update IPTV Links
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # الكود سيعمل تلقائيا كل 6 ساعات
+  workflow_dispatch:
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Update Script
+        run: python update_playlist.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add tv_channels_max_servers.m3u
+          git commit -m "Auto-update links" || exit 0
+          git push
