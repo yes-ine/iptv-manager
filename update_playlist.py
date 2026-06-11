@@ -40,7 +40,7 @@ def get_channel_id(extinf_line):
 print("بدء جلب القنوات من السيرفرات...")
 for url in SERVERS:
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+        req = urllib.request.Request(url, headers={'User-Agent': 'VLC/3.0.16 LibVLC/3.0.16'})
         response = urllib.request.urlopen(req)
         content = response.read().decode('utf-8').splitlines()
         print(f"تم جلب {len(content)} سطر بنجاح من السيرفر: {url[:35]}...")
