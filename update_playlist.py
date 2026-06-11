@@ -13,7 +13,7 @@ SERVERS = [
     "http://marveliptv.life:80/get.php?username=RLVKClECTD&password=PGr4peyP5U&type=m3u_plus",
     "http://desyra.co:80/get.php?username=dipak_25&password=429502&type=m3u_plus&output=ts",
     "http://live.lynxiptv.xyz:80/get.php?username=206923845871&password=mI45UxamwN&type=m3u_plus",
-    "http://1.fu4-pro.cfd:8080/get.php?username=eageapfsat795&password=0d8ie0jv8o&type=m3u_plus"
+    "https://xtream-api.org/get.php?username=3V921HB98qU&password=2DQJdcu2N&type=m3u_plus"
 ]
 
 latest_channels = {}
