@@ -5,7 +5,6 @@ import re
 
 gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
-# 1. السيرفرات القديمة (لتحديث القنوات الموجودة)
 XTREAM_SERVERS = [
     {"url": "http://uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
     {"url": "http://core.itsall.pro:80", "user": "Allgoodlotfi", "pass": "hhDZSxCpeD"},
@@ -14,7 +13,6 @@ XTREAM_SERVERS = [
     {"url": "http://1.fu4-pro.cfd", "user": "eageapfsat795", "pass": "0d8ie0jv8o"}
 ]
 
-# 2. السيرفرات الجديدة (لإضافة مجموعات محددة)
 NEW_SERVERS = [
     {"name": "Hydra", "url": "http://hydraa.st:80", "user": "ssd990987", "pass": "bgb6669099", "keywords": ["bein", "alwan"]},
     {"name": "Aroma", "url": "http://my.atrupo4k.com:80", "user": "youssef2506", "pass": "hAXNTNSJWRjE2Bv", "keywords": ["ar| fifa world cup"]}
@@ -22,6 +20,12 @@ NEW_SERVERS = [
 
 latest_channels = {}
 updated_counts = {srv['url']: 0 for srv in XTREAM_SERVERS}
+
+# هُوية اتصال جديدة لتجاوز الحظر
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+    'Accept': '*/*'
+}
 
 def get_channel_id(name_str):
     tod_match = re.search(r'TOD EV \d+', name_str, re.IGNORECASE)
@@ -39,7 +43,7 @@ print("بدء جلب القنوات للتحديث...")
 for server in XTREAM_SERVERS:
     api_url = f"{server['url']}/player_api.php?username={server['user']}&password={server['pass']}&action=get_live_streams"
     try:
-        req = urllib.request.Request(api_url, headers={'User-Agent': 'IPTVSmartersPro'})
+        req = urllib.request.Request(api_url, headers=HEADERS)
         response = urllib.request.urlopen(req, timeout=15)
         streams = json.loads(response.read().decode('utf-8'))
         print(f"✅ تم الاتصال بنجاح بالسيرفر القديم: {server['url']}")
@@ -63,7 +67,7 @@ for server in NEW_SERVERS:
     cat_url = f"{server['url']}/player_api.php?username={server['user']}&password={server['pass']}&action=get_live_categories"
     streams_url = f"{server['url']}/player_api.php?username={server['user']}&password={server['pass']}&action=get_live_streams"
     try:
-        req_cat = urllib.request.Request(cat_url, headers={'User-Agent': 'IPTVSmartersPro'})
+        req_cat = urllib.request.Request(cat_url, headers=HEADERS)
         cats_data = json.loads(urllib.request.urlopen(req_cat, timeout=15).read().decode('utf-8'))
         
         valid_cats = {}
@@ -73,7 +77,7 @@ for server in NEW_SERVERS:
                 valid_cats[str(cat.get('category_id'))] = f"[{server['name']}] {cat_name}"
         
         if valid_cats:
-            req_str = urllib.request.Request(streams_url, headers={'User-Agent': 'IPTVSmartersPro'})
+            req_str = urllib.request.Request(streams_url, headers=HEADERS)
             streams_data = json.loads(urllib.request.urlopen(req_str, timeout=15).read().decode('utf-8'))
             count = 0
             for stream in streams_data:
@@ -104,7 +108,6 @@ try:
         while i < len(lines):
             line = lines[i]
             if line.startswith('#EXTINF'):
-                # تفادي تكرار القنوات الجديدة عند كل تحديث
                 if 'group-title="[Hydra]' in line or 'group-title="[Aroma]' in line:
                     i += 2
                     continue
@@ -131,7 +134,6 @@ try:
                     file.write(line)
                 i += 1
                 
-        # كتابة القنوات الجديدة في نهاية الملف
         if new_channels_lines:
             file.writelines(new_channels_lines)
             
@@ -149,9 +151,8 @@ if token and gist_id != "ضع_الـID_هنا":
         with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as f:
             updated_content = f.read()
         url = f"https://api.github.com/gists/{gist_id}"
-        headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
-        data = {"files": {"playlist.m3u": {"content": updated_content}}}
-        req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
+        req = urllib.request.Request(url, data=json.dumps({"files": {"playlist.m3u": {"content": updated_content}}}).encode('utf-8'), headers={"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"})
+        req.get_method = lambda: 'PATCH'
         urllib.request.urlopen(req)
         print("✅ تم تحديث Gist.")
     except Exception as e:
