@@ -8,7 +8,7 @@ gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
 # 2. بيانات سيرفرات إكستريم (مستخرجة من روابطك الأصلية)
 XTREAM_SERVERS = [
-    {"url": "http://maven@uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
+    {"url": "http://uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
     {"url": "http://core.itsall.pro:80", "user": "Allgoodlotfi", "pass": "hhDZSxCpeD"},
     {"url": "http://desyra.co:80", "user": "dipak_25", "pass": "429502"},
     {"url": "http://live.lynxiptv.xyz:80", "user": "206923845871", "pass": "mI45UxamwN"},
