@@ -3,10 +3,8 @@ import os
 import json
 import re
 
-# 1. الـ GIST ID الخاص بك
 gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
-# 2. بيانات سيرفرات إكستريم (مستخرجة من روابطك الأصلية)
 XTREAM_SERVERS = [
     {"url": "http://uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
     {"url": "http://core.itsall.pro:80", "user": "Allgoodlotfi", "pass": "hhDZSxCpeD"},
@@ -16,6 +14,8 @@ XTREAM_SERVERS = [
 ]
 
 latest_channels = {}
+# إنشاء عداد فارغ لكل سيرفر
+updated_counts = {srv['url']: 0 for srv in XTREAM_SERVERS}
 
 def get_channel_id(name_str):
     tod_match = re.search(r'TOD EV \d+', name_str, re.IGNORECASE)
@@ -32,18 +32,16 @@ def get_channel_id(name_str):
     name = re.sub(r'\s*\(?\[?\d{2}:\d{2}.*', '', name)
     return name.strip()
 
-# جلب البيانات عبر نظام إكستريم (JSON)
 print("بدء جلب القنوات من سيرفرات إكستريم...")
 for server in XTREAM_SERVERS:
     api_url = f"{server['url']}/player_api.php?username={server['user']}&password={server['pass']}&action=get_live_streams"
     try:
-        # استخدام هُوية تطبيق IPTV لتجنب الحظر
         req = urllib.request.Request(api_url, headers={'User-Agent': 'IPTVSmartersPro'})
         response = urllib.request.urlopen(req, timeout=15)
-        
         streams = json.loads(response.read().decode('utf-8'))
         
-        count = 0
+        print(f"✅ تم الاتصال بنجاح بالسيرفر: {server['url']}")
+        
         for stream in streams:
             if 'name' in stream and 'stream_id' in stream:
                 uid = get_channel_id(stream['name'])
@@ -51,17 +49,13 @@ for server in XTREAM_SERVERS:
                     stream_url = f"{server['url']}/{server['user']}/{server['pass']}/{stream['stream_id']}"
                     latest_channels[uid] = {
                         'server_name': stream['name'].strip(),
-                        'url': stream_url
+                        'url': stream_url,
+                        'server_url': server['url'] # نحتفظ برابط السيرفر المصدر
                     }
-                    count += 1
-                    
-        print(f"✅ تم جلب البيانات بنجاح من: {server['url']} (عدد القنوات: {count})")
-        
     except Exception as e:
         print(f"❌ خطأ في السيرفر {server['url']}: {e}")
         continue
 
-# تحديث الملف المحلي مع الحفاظ على المجموعات
 try:
     with open('tv_channels_max_servers.m3u', 'r', encoding='utf-8') as file:
         lines = file.readlines()
@@ -77,9 +71,14 @@ try:
                 if uid in latest_channels:
                     local_prefix = line.rsplit(',', 1)[0]
                     server_name = latest_channels[uid]['server_name']
+                    source_url = latest_channels[uid]['server_url']
                     
                     file.write(f"{local_prefix},{server_name}\n")
                     file.write(latest_channels[uid]['url'] + "\n")
+                    
+                    # زيادة العداد عند التحديث الفعلي للقناة
+                    if source_url in updated_counts:
+                        updated_counts[source_url] += 1
                 else:
                     file.write(line)
                     file.write(old_url + "\n")
@@ -88,11 +87,16 @@ try:
                 if line.strip() and not line.startswith('http'):
                     file.write(line)
                 i += 1
-    print("تم تحديث الملف المحلي بنجاح.")
+                
+    # طباعة النتيجة النهائية
+    print("\n📊 إحصائيات التحديث الفعلي داخل ملفك:")
+    for srv_url, count in updated_counts.items():
+        if count > 0:
+            print(f"🔹 {srv_url} : تم تحديث {count} قناة")
+            
 except Exception as e:
-    print(f"خطأ أثناء تحديث الملف: {e}")
+    print(f"❌ خطأ أثناء تحديث الملف: {e}")
 
-# تحديث الـ Gist
 token = os.environ.get("GIST_TOKEN")
 if token and gist_id != "ضع_الـID_هنا":
     try:
@@ -107,6 +111,6 @@ if token and gist_id != "ضع_الـID_هنا":
         data = {"files": {"playlist.m3u": {"content": updated_content}}}
         req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='PATCH')
         urllib.request.urlopen(req)
-        print("تم تحديث Gist.")
+        print("✅ تم تحديث Gist.")
     except Exception as e:
-        print(f"خطأ Gist: {e}")
+        print(f"❌ خطأ Gist: {e}")
