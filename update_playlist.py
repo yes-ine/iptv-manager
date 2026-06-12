@@ -42,18 +42,21 @@ for server in XTREAM_SERVERS:
         response = urllib.request.urlopen(req, timeout=15)
         
         streams = json.loads(response.read().decode('utf-8'))
-        print(f"✅ تم جلب البيانات بنجاح من السيرفر: {server['url']}")
         
+        count = 0
         for stream in streams:
             if 'name' in stream and 'stream_id' in stream:
                 uid = get_channel_id(stream['name'])
                 if uid:
-                    # بناء رابط البث المباشر الجديد
                     stream_url = f"{server['url']}/{server['user']}/{server['pass']}/{stream['stream_id']}"
                     latest_channels[uid] = {
                         'server_name': stream['name'].strip(),
                         'url': stream_url
                     }
+                    count += 1
+                    
+        print(f"✅ تم جلب البيانات بنجاح من: {server['url']} (عدد القنوات: {count})")
+        
     except Exception as e:
         print(f"❌ خطأ في السيرفر {server['url']}: {e}")
         continue
