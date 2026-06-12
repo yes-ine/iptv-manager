@@ -42,6 +42,7 @@ for server in XTREAM_SERVERS:
         response = urllib.request.urlopen(req, timeout=15)
         
         streams = json.loads(response.read().decode('utf-8'))
+        print(f"✅ تم جلب البيانات بنجاح من السيرفر: {server['url']}")
         
         for stream in streams:
             if 'name' in stream and 'stream_id' in stream:
@@ -54,7 +55,7 @@ for server in XTREAM_SERVERS:
                         'url': stream_url
                     }
     except Exception as e:
-        print(f"خطأ في السيرفر {server['url']}: {e}")
+        print(f"❌ خطأ في السيرفر {server['url']}: {e}")
         continue
 
 # تحديث الملف المحلي مع الحفاظ على المجموعات
