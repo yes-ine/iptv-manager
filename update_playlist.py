@@ -5,7 +5,7 @@ import re
 
 gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
-# السيرفرات القديمة (لتحديث القنوات الموجودة)
+# السيرفرات القديمة
 XTREAM_SERVERS = [
     {"url": "http://uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
     {"url": "http://core.itsall.pro:80", "user": "Allgoodlotfi", "pass": "hhDZSxCpeD"},
@@ -15,7 +15,7 @@ XTREAM_SERVERS = [
     {"url": "http://marveliptv.life:80", "user": "RLVKClECTD", "pass": "PGr4peyP5U"}
 ]
 
-# السيرفرات الجديدة (لإضافة قنوات محددة)
+# السيرفرات الجديدة
 NEW_SERVERS = [
     {"name": "Hydra", "url": "http://hydraa.st:80", "user": "ssd990987", "pass": "bgb6669099", "keywords": ["bein", "alwan"]},
     {"name": "Aroma", "url": "http://my.atrupo4k.com:80", "user": "youssef2506", "pass": "hAXNTNSJWRjE2Bv", "keywords": ["ar| fifa world cup"]},
@@ -57,9 +57,10 @@ for server in XTREAM_SERVERS:
                 uid = get_channel_id(stream['name'])
                 if uid:
                     if "lynxiptv" in server['url']:
-                    stream_url = f"http://ibo.lynxiptv.com/live/{server['user']}/{server['pass']}/{stream['stream_id']}.m3u8"
-                else:
-                    stream_url = f"{server['url']}/{server['user']}/{server['pass']}/{stream['stream_id']}"
+                        stream_url = f"http://ibo.lynxiptv.com/live/{server['user']}/{server['pass']}/{stream['stream_id']}.m3u8"
+                    else:
+                        stream_url = f"{server['url']}/{server['user']}/{server['pass']}/{stream['stream_id']}"
+                    
                     latest_channels[uid] = {
                         'server_name': stream['name'].strip(),
                         'url': stream_url,
@@ -116,7 +117,6 @@ try:
         while i < len(lines):
             line = lines[i]
             if line.startswith('#EXTINF'):
-                # تفادي التكرار لجميع السيرفرات الجديدة المضافة
                 if any(f'group-title="[{ns["name"]}]' in line for ns in NEW_SERVERS):
                     i += 2
                     continue
