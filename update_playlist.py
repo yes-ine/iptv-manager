@@ -5,25 +5,30 @@ import re
 
 gist_id = "e39d470ae0b80c4bde495ec54476a927"
 
+# السيرفرات القديمة (لتحديث القنوات الموجودة)
 XTREAM_SERVERS = [
     {"url": "http://uq3uya.2m2h.im:80", "user": "Neserrn202334", "pass": "hGTXB2CzTg4Y"},
     {"url": "http://core.itsall.pro:80", "user": "Allgoodlotfi", "pass": "hhDZSxCpeD"},
     {"url": "http://desyra.co:80", "user": "dipak_25", "pass": "429502"},
     {"url": "http://live.lynxiptv.xyz:80", "user": "206923845871", "pass": "mI45UxamwN"},
-    {"url": "http://1.fu4-pro.cfd", "user": "eageapfsat795", "pass": "0d8ie0jv8o"}
+    {"url": "http://1.fu4-pro.cfd", "user": "eageapfsat795", "pass": "0d8ie0jv8o"},
+    {"url": "http://marveliptv.life:80", "user": "RLVKClECTD", "pass": "PGr4peyP5U"}
 ]
 
+# السيرفرات الجديدة (لإضافة قنوات محددة)
 NEW_SERVERS = [
     {"name": "Hydra", "url": "http://hydraa.st:80", "user": "ssd990987", "pass": "bgb6669099", "keywords": ["bein", "alwan"]},
-    {"name": "Aroma", "url": "http://my.atrupo4k.com:80", "user": "youssef2506", "pass": "hAXNTNSJWRjE2Bv", "keywords": ["ar| fifa world cup"]}
+    {"name": "Aroma", "url": "http://my.atrupo4k.com:80", "user": "youssef2506", "pass": "hAXNTNSJWRjE2Bv", "keywords": ["ar| fifa world cup"]},
+    {"name": "Legend", "url": "http://legendking.net:80", "user": "imaneomar", "pass": "e3hzfxuo", "keywords": ["fifa world cup"]},
+    {"name": "Digi", "url": "http://digi.dtv3.lol:2082", "user": "mejdoubnew_958581", "pass": "CHmNLjSr", "keywords": ["fifa world cup", "tod bein sports"]},
+    {"name": "Sans", "url": "http://sans7.org:88", "user": "70:b1:3d:e4:e9:b0", "pass": "PDZOITARCX", "keywords": ["world cup 2026"]}
 ]
 
 latest_channels = {}
 updated_counts = {srv['url']: 0 for srv in XTREAM_SERVERS}
 
-# هُوية اتصال جديدة لتجاوز الحظر
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
     'Accept': '*/*'
 }
 
@@ -108,7 +113,8 @@ try:
         while i < len(lines):
             line = lines[i]
             if line.startswith('#EXTINF'):
-                if 'group-title="[Hydra]' in line or 'group-title="[Aroma]' in line:
+                # تفادي التكرار لجميع السيرفرات الجديدة المضافة
+                if any(f'group-title="[{ns["name"]}]' in line for ns in NEW_SERVERS):
                     i += 2
                     continue
                     
