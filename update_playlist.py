@@ -56,6 +56,9 @@ for server in XTREAM_SERVERS:
             if 'name' in stream and 'stream_id' in stream:
                 uid = get_channel_id(stream['name'])
                 if uid:
+                    if "lynxiptv" in server['url']:
+                    stream_url = f"http://ibo.lynxiptv.com/live/{server['user']}/{server['pass']}/{stream['stream_id']}.m3u8"
+                else:
                     stream_url = f"{server['url']}/{server['user']}/{server['pass']}/{stream['stream_id']}"
                     latest_channels[uid] = {
                         'server_name': stream['name'].strip(),
